@@ -5,13 +5,15 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "public"
+        "distDir": "public",
+        "installCommand": "npm install",
+        "buildCommand": "npx hexo clean && npx hexo generate"
       }
     }
   ],
   "build": {
     "env": {
-      "NODE_VERSION": "16"
+      "NODE_VERSION": "18"
     }
   }
 }
