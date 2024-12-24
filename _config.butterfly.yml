@@ -62,7 +62,7 @@
   disable_top_img: false
   
   # If the banner of page not setting, it will show the default_top_img
-  default_top_img: /updates/head.jpg
+  default_top_img: 
   
   # The banner image of index page
   index_img: /updates/head.jpg
@@ -771,7 +771,7 @@
   
   # Loading Animation
   preloader:
-    enable: false
+    enable: true
     # source
     # 1. fullpage-loading
     # 2. pace (progress bar)
@@ -992,11 +992,11 @@
   # Lazyload
   # https://github.com/verlok/vanilla-lazyload
   lazyload:
-    enable: false
+    enable: true
     # Specify the field to use lazyload (site or post)
     field: site
     placeholder:
-    blur: false
+    blur: true
   
   # PWA
   # See https://github.com/JLHwung/hexo-offline
