@@ -1,12 +1,10 @@
 {
   "framework": null,
-  "buildCommand": "npm install -g hexo-cli && hexo clean && hexo generate",
+  "buildCommand": "chmod +x node_modules/.bin/hexo && npm run build",
   "outputDirectory": "public",
   "installCommand": "npm install",
   "env": {
     "NODE_VERSION": "18",
-    "NPM_FLAGS": "--legacy-peer-deps",
-    "PATH": "/vercel/.npm-global/bin:$PATH",
-    "NPM_CONFIG_PREFIX": "/vercel/.npm-global"
+    "NPM_FLAGS": "--legacy-peer-deps --unsafe-perm=true"
   }
 }
